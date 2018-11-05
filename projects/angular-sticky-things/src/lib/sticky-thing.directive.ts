@@ -37,10 +37,10 @@ export class StickyThingDirective implements OnInit, AfterViewInit, OnDestroy {
   @Input('boundary') boundaryElement: HTMLElement | undefined;
 
   @HostBinding('class.is-sticky')
-  private sticky = false;
+  sticky = false;
 
   @HostBinding('class.boundary-reached')
-  private boundaryReached = false;
+  boundaryReached = false;
 
 
   /**
